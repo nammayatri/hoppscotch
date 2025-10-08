@@ -20,4 +20,14 @@ export const InfraPlatform: InfraPlatformDef = {
 
     return E.left("SMTP_STATUS_FETCH_FAILED")
   },
+  getProxyAppUrl: async () => {
+    // Get proxy URL from environment variable or fallback to window origin
+    const baseUrl = import.meta.env.VITE_BASE_URL || window.location.origin
+    const proxyUrl = `${baseUrl}/proxy`
+
+    return E.right({
+      value: proxyUrl,
+      name: "Self-Hosted Proxy",
+    })
+  },
 }
