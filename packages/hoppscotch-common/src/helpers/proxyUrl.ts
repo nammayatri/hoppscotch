@@ -2,7 +2,8 @@ import { platform } from "~/platform"
 import * as E from "fp-ts/Either"
 
 // Default proxy URL
-export const DEFAULT_HOPP_PROXY_URL = "https://proxy.hoppscotch.io/"
+export const DEFAULT_HOPP_PROXY_URL =
+  "https://hoppscotch.internal.integ.movingtech.net/proxy"
 
 // Get default proxy URL from platform or return default
 export const getDefaultProxyUrl = async () => {
