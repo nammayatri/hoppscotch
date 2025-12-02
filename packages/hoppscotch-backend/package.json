@@ -51,7 +51,7 @@
     "class-validator": "0.14.2",
     "cookie": "1.0.2",
     "cookie-parser": "1.4.7",
-    "express": "5.1.0",
+    "express": "5.2.0",
     "express-session": "1.18.2",
     "fp-ts": "2.16.11",
     "graphql": "16.11.0",
